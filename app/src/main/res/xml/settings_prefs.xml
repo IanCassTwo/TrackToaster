@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceScreen
+        android:summary="@string/options_summary"
+        android:title="@string/options_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="uk.co.wheep.tracktoaster.OptionsActivity"
+            android:targetPackage="uk.co.wheep.tracktoaster" />
+    </PreferenceScreen>
+
+
+</PreferenceScreen>

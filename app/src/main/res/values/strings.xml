@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- START original strings -->
+    <string name="close">Close</string>
+    <string name="warning">Warning</string>
+    <!-- END original strings -->
+
+    <!-- START about strings -->
+    <string name="issues">Issues: %s</string>
+    <string name="website">Website: %s</string>
+    <string name="troubShoot">Trouble Shoot: %s</string>
+    <string name="by_adam">by Adam Renberg, Ian Cass</string>
+    <string name="license">Released under Apache License v2.0</string>
+    <string name="about_text">A tool that will pop up a toast to tell you what track is currently playing</string>
+    <string name="about">About</string>
+    <string name="supported_apps">Supported apps: %s and more…</string>
+    <!-- END about strings -->
+
+    <!-- START cache strings -->
+    <!-- END cache strings -->
+
+    <!-- START creds strings -->
+    <!-- END creds strings -->
+
+    <!-- START heart strings -->
+    <!-- END heart strings -->
+
+    <!-- START copy strings -->
+    <!-- END copy strings -->
+
+    <!-- START permissions and warnings strings -->
+    <!-- END permissions and warnings strings -->
+
+    <!-- START mapis strings -->
+    <string name="incompatability_short">Warning: %1$s is installed and may cause double scrobbling.</string>
+    <string name="incompatability_long">Warning: %1$s is installed and may cause incompatibilities with scrobbling. Disable scrobbling from this app, or uninstall %1$s.</string>
+    <string name="show_supported_apps_list_summary">Enable/disable toasting from apps</string>
+    <string name="supported_apps_category_title">Enabled apps</string>
+    <string name="app_disabled">Won\'t scrobble music from this app</string>
+    <string name="not_installed">This app is not installed</string>
+    <string name="no_supported_mapis_title">No music apps detected</string>
+    <string name="find_supported_mapis_one_title">1 music app detected</string>
+    <string name="find_supported_mapis_many_title">%1 music apps detected</string>
+    <string name="find_supported_mapis_summary">Play music in a supported app and it will appear here</string>
+    <string name="unknown_mapi">Unknown app (pre SLS v1.2.3)</string>
+    <!-- END mapis strings -->
+
+    <!-- START options strings -->
+    <string name="options_title">Options</string>
+    <string name="options_summary">Various configuration settings</string>
+    <!-- END options strings -->
+
+    <!-- START status strings -->
+    <!-- END status strings -->
+
+</resources>

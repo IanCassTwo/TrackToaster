@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "uk.co.wheep.tracktoaster"
+        minSdkVersion 14
+        targetSdkVersion 25
+
+        testApplicationId "uk.co.wheep.tracktoaster.test"
+        testInstrumentationRunner "android.test.InstrumentationTestRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:26.0.0'
+    compile 'com.android.support:support-v4:26.0.0'
+    compile 'com.android.support:design:26.0.0'
+    compile 'com.github.angads25:filepicker:1.1.1'
+    //compile 'info.guardianproject.netcipher:netcipher:1.2'
+}
