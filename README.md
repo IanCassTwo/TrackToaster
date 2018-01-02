@@ -10,7 +10,7 @@ Your audio directory should look like this:-
      
      artist/album/albumart.jpg
 
-You media player will almost certainly use the ID3 information to tell TrackToaster what's playing so it goes without saying, your tags should match your directory names. I personally use [Mp3Tag](https://www.mp3tag.de/en/) on Windows to manage my ID3 tags, to create the correct directory structure and to export albumart.jpg.
+Your media player will almost certainly use the ID3 information within the audio file to tell TrackToaster what's playing so it goes without saying, your tags should match your directory names. I personally use [Mp3Tag](https://www.mp3tag.de/en/) on Windows to manage my ID3 tags, to create the correct directory structure and to export albumart.jpg.
 
 When you first start the program, make sure to go into the settings and choose your media directory. Currently it only supports one directory. Feel free to fork & modify if you like.
 
