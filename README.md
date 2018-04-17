@@ -2,13 +2,19 @@
 
 Track Toaster is a simple app that shows a popup "toast" on the screen showing you which track has just started playing. I use this on my in-car tablet install. I was unsatisfied with other solutions that used Android media database or online resources to obtain album art. I wanted something that would just work. This solution works every time, however, you do need to be disciplined in how you create your directory of audio files.
 
-Your audio directory should look like this:-
+Your audio directory should be laid out like one of the following :-
 
-     artist-album/albumart.jpg
-     
-     OR
-     
+     artist-album/albumart.jpg    
      artist/album/albumart.jpg
+     albumartist-album/albumart.jpg
+     albumartist/album/albumart.jpg
+     "Various Artists"-album/albumart.jpg
+     "Various Artists"/album/albumart.jpg
+     "Various"-album/albumart.jpg
+     "Various"/album/albumart.jpg
+     album/albumart.jpg
+     
+     
 
 Your media player will almost certainly use the ID3 information within the audio file to tell TrackToaster what's playing so it goes without saying, your tags should match your directory names. I personally use [Mp3Tag](https://www.mp3tag.de/en/) on Windows to manage my ID3 tags, to create the correct directory structure and to export albumart.jpg.
 
