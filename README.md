@@ -4,15 +4,15 @@ Track Toaster is a simple app that shows a popup "toast" on the screen showing y
 
 Your audio directory should be laid out like one of the following :-
 
-     artist-album/albumart.jpg    
-     artist/album/albumart.jpg
-     albumartist-album/albumart.jpg
-     albumartist/album/albumart.jpg
-     "Various Artists"-album/albumart.jpg
-     "Various Artists"/album/albumart.jpg
-     "Various"-album/albumart.jpg
-     "Various"/album/albumart.jpg
-     album/albumart.jpg
+     <artist>-<album>/albumart.jpg    
+     <artist>/<album>/albumart.jpg
+     <albumartist>-<album>/albumart.jpg
+     <albumartist>/<album>/albumart.jpg
+     Various Artists-<album>/albumart.jpg
+     Various Artists/<album>/albumart.jpg
+     Various-<album>/albumart.jpg
+     Various/<album>/albumart.jpg
+     <album>/albumart.jpg
      
      
 
