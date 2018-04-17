@@ -32,17 +32,22 @@ package uk.co.wheep.tracktoaster.util;
  */
 public class Track {
 
+    private String mAlbumArtist;
     private String mArtist;
     private String mAlbum;
     private String mTrack;
 
-    public Track(String artist, String album, String track) {
+    public Track(String albumArtist, String artist, String album, String track) {
+        mAlbumArtist = albumArtist;
         mArtist = artist;
         mAlbum = album;
         mTrack = track;
     }
 
     public String getArtist() {
+        return mArtist;
+    }
+    public String getAlbumArtist() {
         return mArtist;
     }
     public String getAlbum() {

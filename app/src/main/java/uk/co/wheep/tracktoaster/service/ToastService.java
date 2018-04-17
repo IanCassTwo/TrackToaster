@@ -2,6 +2,7 @@ package uk.co.wheep.tracktoaster.service;
 
 import android.app.Service;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.IBinder;
@@ -70,7 +71,23 @@ public class ToastService extends Service {
 
     void doToast() {
 
-        Uri albumArt = findAlbumArt(mTrack.getArtist(), mTrack.getAlbum(), mTrack.getTrack());
+        Uri albumArt = findAlbumArt(mTrack.getArtist(), mTrack.getAlbum());
+
+        if (albumArt == null) {
+            albumArt = findAlbumArt(mTrack.getAlbumArtist(), mTrack.getAlbum());
+        }
+
+        if (albumArt == null) {
+            albumArt = findAlbumArt("Various Artists", mTrack.getAlbum());
+        }
+
+        if (albumArt == null) {
+            albumArt = findAlbumArt("Various", mTrack.getAlbum());
+        }
+
+        if (albumArt == null) {
+            albumArt = findAlbumArt(mTrack.getAlbum());
+        }
 
         String text = "" + mTrack.getArtist() + " " + mTrack.getTrack();
         Log.d(TAG, "Toasting " + text);
@@ -93,7 +110,7 @@ public class ToastService extends Service {
         }
 
         Toast toast = new Toast(this);
-        toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+        toast.setGravity(Gravity.CENTER_VERTICAL,0,0);
 
         if (settings.getLongToast()) {
             Log.d(TAG, "Long toast");
@@ -107,7 +124,21 @@ public class ToastService extends Service {
         toasted = Boolean.TRUE;
     }
 
-    protected Uri findAlbumArt(String artist, String album, String track) {
+    protected Uri findAlbumArt(String album) {
+
+        // Look for albumart.jpg artist-album
+        Log.d(TAG, "Looking for " + settings.getAlbumsDir() + "/" + album + "/albumart.jpg");
+        File file = new File(settings.getAlbumsDir() + "/" + album + "/albumart.jpg");
+        if (file.exists()) {
+            Log.d(TAG, "Found " + settings.getAlbumsDir() + "/" + album + "/albumart.jpg");
+            return Uri.fromFile(file);
+        }
+        Log.d(TAG, "Didn't find albumart.jpg");
+
+        return null;
+    }
+
+    protected Uri findAlbumArt(String artist, String album) {
 
         // Look for albumart.jpg artist-album
         Log.d(TAG, "Looking for " + settings.getAlbumsDir() + "/" + artist + " - " + album + "/albumart.jpg");

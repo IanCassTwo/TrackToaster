@@ -1,49 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@layout/shape"
-    android:paddingLeft="2dp"
-    android:paddingTop="10dp"
+    android:clickable="false"
     android:paddingBottom="10dp"
+    android:paddingLeft="2dp"
     android:paddingRight="20dp"
-    android:clickable="true">
+    android:paddingTop="10dp">
 
-    <ImageView
-        android:id="@+id/albumArt"
-        android:layout_width="150.0dip"
-        android:layout_height="150.0dip"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="8.0dip"
-        android:layout_marginRight="8.0dip"
-        android:src="@drawable/default_album"/>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="650dp"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_toRightOf="@+id/albumArt"
-        android:orientation="vertical">
+        android:background="@layout/shape">
 
-        <TextView
-            android:id="@+id/track"
+        <ImageView
+            android:id="@+id/albumArt"
+            android:layout_width="250.0dip"
+            android:layout_height="250.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dip"
+            android:layout_marginRight="8.0dip"
+            android:src="@drawable/default_album" />
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
-            android:textColor="@android:color/white" />
+            android:layout_centerInParent="false"
+            android:layout_toRightOf="@+id/albumArt"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/artist"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
-            android:textColor="@android:color/white" />
+            <uk.co.wheep.tracktoaster.util.AutoResizeTextView
+                android:id="@+id/track"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:maxLines="2"
+                android:textSize="85sp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@android:color/white" />
 
-        <TextView
-            android:id="@+id/album"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
-            android:textColor="@android:color/white" />
-    </LinearLayout>
-</RelativeLayout>
+            <TextView
+                android:id="@+id/artist"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:textSize="36dp"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/album"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

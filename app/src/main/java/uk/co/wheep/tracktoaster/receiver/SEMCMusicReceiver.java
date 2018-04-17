@@ -43,15 +43,17 @@ public class SEMCMusicReceiver extends BuiltInMusicAppReceiver {
 
         Log.d(TAG, "Will read data from SEMC intent");
 
+        String aa = bundle.getString("ALBUMARTIST_NAME");
         String ar = bundle.getString("ARTIST_NAME");
         String al = bundle.getString("ALBUM_NAME");
         String tr = bundle.getString("TRACK_NAME");
+
 
         if (ar == null || al == null || tr == null) {
             throw new IllegalArgumentException("null track values");
         }
 
-        return new Track(ar, al, tr);
+        return new Track(aa, ar, al, tr);
     }
 
 }

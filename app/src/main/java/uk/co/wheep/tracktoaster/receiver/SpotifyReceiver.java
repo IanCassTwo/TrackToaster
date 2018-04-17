@@ -53,7 +53,7 @@ public class SpotifyReceiver extends AbstractPlayStatusReceiver {
             setPlaying(Boolean.TRUE);
 
             // Track data
-            setTrack(new Track(bundle.getString("artist"),bundle.getString("album"),bundle.getString("track")));
+            setTrack(new Track(bundle.getString("albumartist"), bundle.getString("artist"),bundle.getString("album"),bundle.getString("track")));
         }
         if (bundle.containsKey("playing")) {
             setPlaying(bundle.getBoolean("playing"));

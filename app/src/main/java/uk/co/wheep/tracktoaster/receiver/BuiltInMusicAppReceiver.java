@@ -103,6 +103,7 @@ public abstract class BuiltInMusicAppReceiver extends
 
 		Log.d(TAG, "Will read data from intent");
 
+		String aa = bundle.getString("albumartist");
 		String ar = bundle.getString("artist");
 		String tr = bundle.getString("track");
 
@@ -114,6 +115,6 @@ public abstract class BuiltInMusicAppReceiver extends
 		if (bundle.containsKey("album")) {
 			al = bundle.getString("album");
 		}
-		return new Track(ar, al, tr);
+		return new Track(aa, ar, al, tr);
     }
 }

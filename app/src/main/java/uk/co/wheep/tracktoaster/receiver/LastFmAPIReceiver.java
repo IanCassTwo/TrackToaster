@@ -50,7 +50,7 @@ public class LastFmAPIReceiver extends AbstractPlayStatusReceiver {
             setPlaying(Boolean.TRUE);
 
             // Track data
-            setTrack(new Track(bundle.getString("artist"),bundle.getString("album"),bundle.getString("track")));
+            setTrack(new Track(bundle.getString("albumartist"), bundle.getString("artist"),bundle.getString("album"),bundle.getString("track")));
 
         } else if (action.equals(ACTION_LASTFMAPI_PAUSERESUME)) {
             if (bundle.containsKey("position")) {

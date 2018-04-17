@@ -85,7 +85,7 @@ public class ScrobbleDroidMusicReceiver extends AbstractPlayStatusReceiver {
         }
 
         // Track data
-        setTrack(new Track(bundle.getString("artist"),bundle.getString("album"),bundle.getString("track")));
+        setTrack(new Track(bundle.getString("albumartist"), bundle.getString("artist"),bundle.getString("album"),bundle.getString("track")));
 
     }
 }
