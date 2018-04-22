@@ -1,6 +1,8 @@
 # Track Toaster
 
-Track Toaster is a simple app that shows a popup "toast" on the screen showing you which track has just started playing. I use this on my in-car tablet install. I was unsatisfied with other solutions that used Android media database or online resources to obtain album art. I wanted something that would just work. This solution works every time, however, you do need to be disciplined in how you create your directory of audio files.
+Track Toaster is a simple app that shows a popup "toast" on the screen showing you which track has just started playing. I use this on my in-car Nexus 7 tablet install. I was dissatisfied with other solutions that used Android media database or online resources to obtain album art. I wanted something that would just work. This solution works every time, however, you do need to be disciplined in how you create your directory of audio files.
+
+https://youtu.be/SEz9aanqMwA
 
 Your audio directory should be laid out like one of the following :-
 
